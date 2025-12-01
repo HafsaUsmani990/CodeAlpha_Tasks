@@ -1,0 +1,357 @@
+/* ===== YOUR ORIGINAL CSS (unchanged) ===== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-color: #000000;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+section{
+  color: #EFD6AC;
+  height: 100vh;
+}
+
+section .section-content h1,
+section .section-content h2
+section .section-content h3 {
+  margin-bottom: 20px;
+}
+
+.navbar a{
+  color: #EFD6AC;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight:700;
+  border-bottom: 2px solid transparent;
+}
+.navbar a:hover{
+  border-bottom: 2px solid #EFD6AC;
+}
+.navbar h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;          
+  height: 60px;         
+  background-color: #EFD6AC;
+  color: #32021f;
+  font-size: 26px;
+  border-radius: 50%;
+  padding: 10px;        
+  flex-shrink: 0;       
+}
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #32021f;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  box-shadow: #EFD6AC 0px 4px 4px 0px;
+}
+
+#main{
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #EFD6AC;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 
+  #EFD6AC inset 0 0 5px, 
+  #32021f 10px -10px 0 -3px, 
+  #EFD6AC 10px -10px;
+}
+
+.section-content{
+  opacity: 0;
+  transform: translateY(20px); 
+  animation: fadeInUp 1s forwards; 
+  animation-delay: 0.3s; /
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Myinfo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+.link-box{
+  background-color: #32021f;
+  height:50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: #32021f 0px 6px 6px 0px;
+}
+.link-box img {
+  width: 60px;
+  height: 60px;
+  filter: invert(86%) sepia(21%) saturate(410%) hue-rotate(350deg) brightness(102%) contrast(94%);
+}
+.link-box:hover{
+  transform:scale(1.1);
+}
+
+.section-content{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  height: 100%;
+}
+#About h4{
+  background-color: #32021f;
+  color: #EFD6AC;
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: #EFD6AC 0px 4px 4px 0px;
+}
+
+.skills-container{
+  display: flex;
+  flex-wrap: wrap;           
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-box{
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #32021f;
+  color: #EFD6AC;
+  text-align: center;
+  line-height: 70px;
+  font-size: 16px;
+  font-weight: 900;
+  border-radius: 50px;
+  box-shadow: #EFD6AC 0px 4px 4px 0px;
+}
+.skill-box svg{
+  height: 40px;
+  width: 40px;
+  fill:#EFD6AC;
+}
+
+.skill-box:hover{
+  transform:scale(1.1);
+}
+
+.pro-containers{
+  display: flex;
+  flex-wrap: wrap;           
+  justify-content: center;
+  gap: 20px;
+}
+.pro-box{
+  height: 100px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #32021f;
+  color: #EFD6AC;
+  text-align: center;
+  line-height: 70px;
+  font-size: 16px;
+  font-weight: 900;
+  border-radius: 5px;
+  box-shadow: #EFD6AC 0px 4px 4px 0px;
+}
+.pro-box img {
+  width: 100px;
+  height: 60px;
+  filter: invert(86%) sepia(21%) saturate(410%) hue-rotate(350deg) brightness(102%) contrast(94%);
+}
+.pro-box:hover{
+  transform:scale(1.02);  
+}
+
+.contact-container form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border: 2px solid #EFD6AC;
+  border-radius: 20px;
+  box-shadow: #EFD6AC 0px 2px 4px, #EFD6AC 0px 7px 13px -3px,#EFD6AC 0px -3px 0px inset;
+}
+
+input{
+  width: 350px;
+  height: 50px;
+  padding: 10px;
+  background-color: #32021f;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight:600;
+}
+input::placeholder{
+  color: #EFD6AC;
+}
+textarea{
+  width: 350px;
+  height: min-content;
+  padding: 10px;
+  background-color: #32021f;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  resize:none;
+  font-size: 16px;
+  font-weight:600;
+}
+textarea::placeholder{
+  color: #EFD6AC;
+}
+
+button{
+  width: 150px;
+  height: 50px;
+  background-color: #32021f;
+  color: #EFD6AC;
+  font-size: 20px;
+  font-weight:600;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: #EFD6AC 0px 4px 4px 0px;
+  cursor: pointer;
+}
+
+.footer{
+  width: 100%;
+  color: #32021f;
+  text-align: center;
+  background-color: #EFD6AC;
+  padding: 15px;
+}
+
+
+/* ========================================================= */
+/* ===================== RESPONSIVE PART ==================== */
+/* ========================================================= */
+
+/* TABLETS */
+@media (max-width: 900px) {
+  #main {
+    font-size: 35px;
+  }
+
+  .navbar {
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  input, textarea {
+    width: 280px;
+  }
+
+  .pro-box {
+    width: 160px;
+  }
+}
+
+/* LARGE MOBILES */
+@media (max-width: 600px) {
+  #main {
+    font-size: 28px;
+    padding: 10px;
+  }
+
+  section {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .navbar {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+
+  input, textarea {
+    width: 240px;
+  }
+
+  .skill-box {
+    height: 65px;
+    width: 65px;
+  }
+
+  .pro-box {
+    width: 140px;
+    height: 90px;
+  }
+}
+
+/* SMALL MOBILES */
+@media (max-width: 400px) {
+  #main {
+    font-size: 24px;
+  }
+
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .navbar h2 {
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+  }
+
+  input, textarea {
+    width: 200px;
+  }
+
+  .pro-box {
+    width: 120px;
+  }
+
+  .skill-box {
+    height: 55px;
+    width: 55px;
+    font-size: 12px;
+  }
+}
