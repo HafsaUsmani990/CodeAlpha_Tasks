@@ -27,5 +27,22 @@ JavaScript
 
 An interactive image gallery built with a focus on layout, filtering, and user-friendly design. This project demonstrates the use of DOM manipulation and responsive styling.
 
+## Features
+Responsive Images showcase
+Three buttons 
+One for all images
+One for nature images specifically
+One for City images specifically
+Arrows to forward and backward
+Cross button to close the opened image
+Hover on images for interactive effect
+
+## Technologies Used
+
+HTML
+CSS
+JavaScript
+
+
 ##
 
